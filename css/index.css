@@ -1,0 +1,559 @@
+/*
+bem
+模式*/
+
+.header{
+    background-color: #f7f7f7;
+    position: relative;
+
+}
+.header_wrap{
+    height:60px;
+    width: auto;
+    position: relative;
+    margin: 0 auto;
+}
+.header_logo{
+    left: 20px;
+    margin-top: -20px;
+    top: 50%;
+    line-height: 40px;
+    width: 150px;
+    height: 40px;
+    font-size:20px;
+    color: #07111b;
+    text-indent: 50px;
+    background: url("../image/mylogo.png") left center no-repeat;
+    -webkit-background-size: 40px;
+    background-size: 40px 40px;
+    position:absolute;
+}
+.header_nav{
+    right: 20px;
+    hight:40px;
+    top: 50%;
+    margin-top: -20px;
+    position: absolute;
+
+}
+.header_nav_item{
+    text-align: center;
+    width: 38px;
+    height: 38px;
+    color:#292f35;
+    font-size: 16px;
+    display: block;
+    float: left;
+    margin-left: 40px;
+    line-height: 38px;
+    position: relative;
+
+}
+.header_nav_item:hover{
+    color: #90c2e5;
+}
+.header_nav_item_status_active{
+    color: #90c2e5;
+}
+.header_nav_item_status_active::after{
+    content: ' ';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #90c2e5;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+.header_nav_item_custom_button{
+    background-color: #90c2e5;
+    color: white;
+    text-align: center;
+    width: 90px;
+    border-radius: 5px;
+}
+/*4k屏幕*/
+.screen-01{
+    height:960px;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+.four_k_warp{
+
+    position: absolute;
+    width: 500px;
+    height: 323px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+    z-index: 1;
+  }
+
+
+/*第一屏幕*/
+.screen-1{
+    height:900px;
+    background: url("../image/bg-screen-1.png") no-repeat center;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    transition: all 1s ;
+}
+.screen-1_heading{
+    color: #4d555d;
+    text-align: center;
+    margin: 0;
+    padding-top: 130px; ;
+    font-weight: normal;
+    font-size:46px;
+    z-index: 3;
+}
+.screen-1_heading b{
+    color: #90c2e5;
+    font-weight: normal;
+    z-index: 3;
+
+}
+.screen-1_phone{
+    text-align:center;
+    width: 1600px;
+    height: 411px;
+    background: url("../image/sonyphone-screen1.png") no-repeat center;
+    position: absolute;
+    left: 50%;
+    margin-left: -800px;
+    bottom: 150px;
+    z-index: 2;
+    position: absolute;
+
+}
+.screen-1_shadow{
+    position: absolute;
+    text-align:center;
+    width: 1920px;
+    height: 411px;
+    position: absolute;
+    left: 50%;
+    margin-left: -960px;
+    bottom: -20px;
+    background: url("../image/screen-1-shadow.png")no-repeat center;
+    z-index: 1;
+    opacity: .9;
+}
+/*第二屏幕*/
+.screen-2{
+    height:960px;
+    background-color:#fafafa;
+    position: relative;
+    overflow: hidden;
+}
+.screen-2_heading {
+     color: #9bb9d3;
+     text-align: center;
+     margin: 0;
+     padding: 0;
+     font-weight: normal;
+     font-size:46px;
+     padding-top: 96px;
+    line-height: 46px;
+ }
+.screen-2_subheading {
+    color: #2c3137;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size:16px;
+    padding-top: 25px;
+    line-height: 30px;
+}
+.screen-2_phone{ text-align:center;
+    width: 657px;
+    height: 680px;
+    background: url("../image/screen-2-phone.png") no-repeat center;
+    position: absolute;
+    left: 50%;
+    margin-left: -329px;
+    bottom: -5px;
+    z-index: 1;
+    position: absolute;
+}
+.screen-2_point{
+    width: 270px;
+    height: 22px;
+    padding-right: 70px;
+    font-size: 22px;
+    line-height: 22px;
+    color:#4d555d;
+    background: url("../image/icon-point-right.png") no-repeat center right;
+    position: absolute;
+}
+.screen-2_point_right{
+    padding: 0 0 0 70px;
+    background: url("../image/icon-point-left.png") no-repeat center left;
+}
+.screen-2_point_i_1{
+    top:100px;
+    left: -235px;
+    z-index: 2;
+
+}
+.screen-2_point_i_3{
+    top:400px;
+    left: -210px;
+    z-index: 2;
+}
+.screen-2_point_i_4{
+    top:280px;
+    left: 585px;
+    z-index: 2;
+}
+/*第三屏幕*/
+.screen-3{
+    height: 960px;
+    background-color: #39576f;
+    position: relative;
+    overflow: hidden;
+}
+.screen-3_warp{
+    width: 1200px;
+    height: auto;
+    margin:  0 auto;
+    position: relative;
+}
+
+.screen-3_heading {
+    color: #ffffff;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size:46px;
+    padding-top: 96px;
+    line-height: 46px;
+}
+.screen-3_subheading {
+    color: #ffffff;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size:16px;
+    padding-top: 25px;
+    line-height: 30px;
+}
+.screen-3_phone{
+    width: 1153px;
+    height: 900px;
+    background: url("../image/screen-3-phone.png") no-repeat center top ;
+    position: absolute;
+    left: 350px;
+    top: 220px;
+    z-index: 1;
+}
+.screen-3_phone_box{
+    position: absolute;
+    top:395px;
+    left:0;
+    width: 328px;
+    height: 280px;
+}
+.screen-3_phone_box_item{
+    color: #ffffff;
+    width: 138px;
+    height: 118px;
+    border: 2px solid #ffffff;
+    margin:  0 20px 20px 0;
+    float: left;
+    border-radius: 3px;
+    text-align: center;
+}
+.screen-3_phone_box_number{
+    color: #ffffff;
+    padding:28px 0 40px ;
+    height: 36px;
+    line-height: 36px;
+    font-size: 36px;
+    position: relative;
+}
+.screen-3_phone_box_desc{
+    height: 14px;
+    line-height: 14px;
+    font-size: 14px;
+}
+/*传感器特写页*/
+.imx_cmos{
+    height: 960px;
+    background-color: #39576f;
+    position: relative;
+    overflow: hidden;
+}
+.imx_cmos_warp{
+    position: absolute;
+    width: 1350px;
+    height: 323px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+}
+.imx_cmos_head1{
+    padding-top: 270px;
+    font-size: 40px;
+    color: #ffffff;
+    left: 0;
+}
+.imx_cmos_head2{
+    margin: 30px auto 25px;
+    font-size: 60px;
+    color: #ffffff;
+    left: 0;
+}
+.imx_cmos_head3{
+    line-height: 30px;
+    font-size: 16px;
+    width: 660px;
+    color: #ffffff;
+    left: 0;
+}
+.imx_cmos_head3_status_active::after{
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 90px;
+    left: 0;
+    bottom: -5px;
+    background: #C39D63;
+}
+
+
+
+/*第4屏幕*/
+.screen-4{
+    height: 960px;
+    background: url("../image/screen4-background-phone.jpg")no-repeat center;
+    background-size:100%;
+}
+/*第5屏幕*/
+.screen-5{
+    height: 960px;
+    background: red;
+    background-size:100%;
+}
+.screen-5{
+    height: 960px;
+    background-color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+.screen-5_warp{
+    margin: 0 auto;
+    width: 1600px;
+    height: auto;
+    margin:  0 auto;
+    position: relative;
+}
+
+.screen-5_heading {
+    color: #9bb9d3;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size:46px;
+    padding-top: 135px;
+    line-height: 46px;
+}
+.screen-5_subheading {
+    color: #464a4f;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size:16px;
+    padding-top: 29px;
+    line-height: 30px;
+}
+.screen-5_type {
+
+    margin:0 auto;
+     width: 1600px;
+    height: 460px;
+    position: absolute;
+    top: 330px;
+    z-index: 2;
+    margin-left: 100px;
+
+
+ }
+.screen-5_type_item {
+    width: 350px;
+    height: 460px;
+    position: relative;
+    text-align: center;
+    background-size: cover;
+    float: left;
+}
+.screen-5_type_item_color {
+    width: 100%;
+    height: 14px;
+    line-height: 14px;
+    font-size: 18px;
+    color: #2c3238;
+    position: absolute;
+    bottom: -44px;
+
+}
+.screen-5_type_item_storage {
+    width: 100%;
+    height: 12px;
+    line-height: 12px;
+    font-size: 14px;
+    color: #a4a9ae;
+    position: absolute;
+    bottom: -66px;
+}
+.screen-5_phone_img1{
+    background: url("../image/phone1.jpg")no-repeat center ;
+}
+.screen-5_phone_img2{
+    background: url("../image/phone2.jpg")no-repeat center ;
+}
+.screen-5_phone_img3{
+    background: url("../image/phone3.jpg")no-repeat center ;
+}
+.screen-5_phone_img4{
+    background: url("../image/phone4.jpg")no-repeat center ;
+}
+/* 第六屏*/
+.screen-6{
+    background:url("../image/banner_7.jpg");
+    height: 960px;
+    position: relative;
+    overflow: hidden;
+ }
+.screen-6_warp{
+    position: absolute;
+    width: 1350px;
+    height: 323px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+}
+.screen-6_head1{
+    padding-top: 270px;
+    font-size: 40px;
+    color: #ffffff;
+    left: 0;
+}
+.screen-6_head2{
+    margin: 30px auto 25px;
+    font-size: 60px;
+    color: #ffffff;
+    left: 0;
+}
+.screen-6_head3{
+    line-height: 30px;
+    font-size: 16px;
+    width: 660px;
+    color: #ffffff;
+    left: 0;
+}
+.screen-6_head3_status_active::after{
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 90px;
+    left: 0;
+    bottom: -5px;
+    background: #C39D63;
+}
+
+/* 第7屏*/
+.screen-7{
+    padding: 120px 0 ;
+    background:url("../image/screen7-bg.jpg");
+    overflow: hidden;
+    background-position:10px 500px;
+    position: relative;
+    text-align: center;
+}
+.screen-7_button{
+    height: 80px;
+    width: 240px;
+    text-align: center;
+    line-height: 80px;
+    font-size:24px;
+    border-radius: 3px;
+    color: #ffffff;
+    background-color: #9bb9d3;
+    display:inline-block;
+    transition: all .5s;
+}
+.screen-7_button:hover{
+    box-shadow: 0px 0px 10px #fff ;
+    -webkit-mask-position-x: 100px;
+
+}
+
+/* 页脚*/
+.footer{
+   height:80px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    background-color: #07111b;
+    line-height: 80px;
+}
+
+
+.outline{
+    position: fixed;
+    padding: 5px 10px;
+    bottom: 350px;
+    right: 0;
+    z-index: 4;
+    background-color: #ffffff;
+    box-shadow:0 4px 12px #07111b;
+
+}
+.outline_item{
+    padding: 5px 0;
+    width: 40px;
+    line-height:30px;
+    height: 40px;
+    text-align: center;
+    display: block;
+    font-size: 14px;
+    background-color: #ffffff;
+    border-top:1px solid #eee;
+    color: #37515a;
+}
+.outline_item:first-child{
+    border: none;
+}
+.outline_item_status_active{
+    color: #0fd8c4;
+}
+.header_nav-tip{
+    position: absolute;
+    width: 38px;
+    height:3px;
+    background-color: #90c2e5;
+    bottom: 0px;
+    left:0;
+    margin-left: 40px;
+    transition: all .5s;
+
+}
+
